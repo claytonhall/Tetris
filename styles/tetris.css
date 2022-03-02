@@ -1,0 +1,14 @@
+.board{
+    height:800px;
+    width:600px;
+    border: 1px solid green; 
+    margin:0px auto 0px auto;
+}
+
+
+.square {
+    width: 40px;
+    height: 40px;
+    outline: solid 2px yellow;
+};
+
