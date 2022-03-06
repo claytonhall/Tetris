@@ -1,12 +1,11 @@
-/*
 ---
-name: Request.HTML - jsFiddle/Github integration demo
-description: Tetris in javascript jsfiddle demo
-authors:
-  - Clayton Hall
-normalize_css: yes
-lang_css: SCSS
-...
-*/
-
-<p>A working tetris game (hopefully).</p> 
+ name: Tetris
+ description: Some description, please keep it in one line
+ authors:
+   - Clayton Hall
+ resources:
+   - http://some.url.com/some/file.js
+   - http://other.url.com/other_filename.css
+ normalize_css: no
+ load_type: d
+ 
