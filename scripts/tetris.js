@@ -23,11 +23,6 @@ window.onload = function(){
 
     createBoard();
 
-    //drawBar();
-    //drawZ();
-    //drawS();
-    //drawT();
-
     //var piece = pieces[getRandomInt(3)]();
 
 
@@ -176,8 +171,6 @@ class Piece
         }
     }
 
-    
-    
     constructor(gridElements){
         this.oldGridElements = gridElements.map((x)=>x);
         this.gridElements = gridElements.map((x)=>x);
@@ -190,8 +183,11 @@ class Piece
 class ZPiece extends Piece{
     constructor(){
         super([[3,0],[4,0],[4,1],[5,1]])
-    }
+
+        
     
+    
+    }
 }
 
 class SPiece extends Piece{
@@ -220,6 +216,38 @@ class BarPiece extends Piece{
 
 
 
+// var positions = [
+//     `____
+//    ____
+//    XXXX
+//    ____`,
+ 
+//     `_X__
+//    _X__
+//    _X__
+//    _X__`
+// ];
+
+// var currentPostion = 0;
+
+
+// var lines = positions[currentPostion].split(/\r?\n/);
+// var retVal = [];
+
+// for (var i = 0; i < lines.length; i++) {
+//  console.log(lines[i].trim());
+ 
+//  for(var j = 0; j < lines[i].length; j++)
+//  {
+//      if(lines[i].charAt(j) === 'X')
+//    {
+//        retVal.push([i,j])
+//    }
+//  }
+// }
+
+
+// console.log(retVal);
 
 
 
