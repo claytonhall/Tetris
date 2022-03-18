@@ -1,11 +1,15 @@
+/*
 ---
  name: Tetris
- description: Some description, please keep it in one line
+ description: Tetris fiddle
  authors:
    - Clayton Hall
  resources:
-   - http://some.url.com/some/file.js
-   - http://other.url.com/other_filename.css
+   - https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js
+   - https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css
+   - https://fonts.googleapis.com/css2?family=Roboto&display=swap
  normalize_css: no
- load_type: d
- 
+---
+*/
+
+<p>hi</p>
