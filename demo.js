@@ -38,10 +38,21 @@ window.onload = function(){
 
 function Start()
 {
+    //activePiece.Draw();
+    //loop(Date.now());
+    //window.requestAnimationFrame(loop);
     window.requestAnimationFrame(loop);
 }
 
 
+// setInterval((function(){ 
+//     if(!isDrawing){
+//         loop();
+//     }
+//  }), 1000);
+
+
+//
 lastMove = new Date();
 totalProgress = 0;
 function update(progress) {
@@ -62,10 +73,14 @@ function update(progress) {
     isDrawing = true;
 
     // Draw the state of the world
-    if(activePiece){
-        console.log(`drawing: ${lastDraw}`);
-        activePiece.Draw();
-    }
+    //if(new Date() > new Date(lastDraw.getTime() + 500))
+    //{
+        if(activePiece){
+            console.log(`drawing: ${lastDraw}`);
+            activePiece.Draw();
+            //lastDraw = new Date();
+        }
+   // }
 
     isDrawing = false;
   }
@@ -78,8 +93,10 @@ function update(progress) {
   
     lastRender = timestamp
     window.requestAnimationFrame(loop)
+     //loop(Date.now())
   }
   var lastRender = 0
+ // window.requestAnimationFrame(loop)
 
 
 
@@ -231,7 +248,6 @@ class BarPiece extends Piece{
 
 
 // console.log(retVal);
-
 
 
 
