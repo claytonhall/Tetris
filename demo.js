@@ -1,3 +1,5 @@
+/* demo.js */
+
 //this represents the board
 gridArray = {};
 

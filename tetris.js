@@ -1,3 +1,5 @@
+/* tetris.js */
+
 //this represents the board
 gridArray = {};
 
